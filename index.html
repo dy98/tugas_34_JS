@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Belajar Javascript - NIOMIC</title>
+</head>
+
+<body>
+    <input type="text" value="Nama Depan" /> <br />
+    <input type="text" value="Nama Belakang" /> <br />
+    <input type="text" value="Hobi" /> <br /><br />
+
+    <button type="button" name="button">Jalan</button>
+
+
+    <script>
+        function tombolInput() {
+            const tombol = document.getElementsByTagName('button')[0];
+            const input = document.getElementsByTagName('input');
+
+            tombol.addEventListener('click', function() {
+                console.log(input);
+            });
+        }
+
+        tombolInput();
+    </script>
+</body>
+
+</html>
